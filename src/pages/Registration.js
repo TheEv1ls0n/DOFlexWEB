@@ -19,8 +19,8 @@ class Registration extends Component{
                         Sign In
                     </Button>
                 </Wrapper>
-                <Input />
-                <Input />
+                <Input placeholder="Email adress"/>
+                <Input last placeholder="Password"/>
                 <Button transparent>
                     Sign In
                 </Button>

@@ -16,4 +16,10 @@ export const Input = styled.input`
   transition: 0.1s;
   cursor: pointer;
   user-select: none;
-`
+   ${props => css`
+  
+    ${props.last && css`
+        margin-top: 54px;
+    `}
+  `}
+`;
