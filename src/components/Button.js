@@ -1,6 +1,6 @@
 import styled, { css }from 'styled-components';
 
-export const Button = styled.div`
+export const Button = styled.button`
   flex: 0 1 372px;
   display: flex;
   height: 60px;
@@ -22,10 +22,9 @@ export const Button = styled.div`
         border-radius: 10px;
         background-color: #555555;
         color: white;
-        margin-top: 104px;
+        margin-top: 80px;
         width: 150px;
-        height: 10px;
-  
+        flex: 0 1 60px;
         &:hover {
             border-color: purple;
         }
