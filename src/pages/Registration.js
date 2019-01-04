@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 
-import { Button } from '../components/Button';
+import { Button, Txt } from '../components/Button';
 import { Input } from '../components//Input';
 import { Wrapper } from "../containers/Wrapper";
 import { Panel } from "../containers/Panel";
@@ -13,16 +13,22 @@ class Registration extends Component{
             <Panel>
                 <Wrapper>
                     <Button>
-                        Create Account
+                        <Txt>
+                            Create Account
+                        </Txt>
                     </Button>
                     <Button>
+                        <Txt>
                         Sign In
+                        </Txt>
                     </Button>
                 </Wrapper>
                 <Input placeholder="Email adress"/>
                 <Input last placeholder="Password"/>
                 <Button transparent>
-                    Sign In
+                    <Txt>
+                        Sign In
+                    </Txt>
                 </Button>
             </Panel>
 

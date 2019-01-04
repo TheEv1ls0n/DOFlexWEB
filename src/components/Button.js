@@ -1,15 +1,17 @@
 import styled, { css }from 'styled-components';
 
 export const Button = styled.div`
-  padding: 20px 100px 20px 100px;
+  flex: 0 1 372px;
+  display: flex;
+  height: 60px;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.18);
   background-color: #e8e8e8;
   border: 1px solid black;
   margin-bottom: 10px;
-  font-family: "Nanum-Gothic-Coding, Mono-serif"; 
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+\`;
   &:hover {
     border-color: white;
   }
@@ -17,16 +19,12 @@ export const Button = styled.div`
   ${props => css`
   
     ${props.transparent && css`
-        width: 167px;
-        height: 16px;
-        padding-top: 28px;
-        padding-right: 144px;
-        padding-bottom: 28px;
-        padding-left: 144px
         border-radius: 10px;
         background-color: #555555;
         color: white;
         margin-top: 104px;
+        width: 150px;
+        height: 10px;
   
         &:hover {
             border-color: purple;
@@ -34,3 +32,12 @@ export const Button = styled.div`
     `}
   `}
 `;
+
+export const Txt = styled.a`
+    text-transform: uppercase;
+    font-family: "Nanum-Gothic-Coding, Mono-serif";
+    font-size: 24px;
+    font-weight: 400;
+`
+
+

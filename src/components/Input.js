@@ -13,6 +13,7 @@ export const Input = styled.input`
   padding-bottom: 28px;
   padding-left: 144px;
   margin-top: 90px; 
+  font-size: 30px;
   transition: 0.1s;
   cursor: pointer;
   user-select: none;
