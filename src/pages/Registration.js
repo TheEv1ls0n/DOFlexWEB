@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
 
 import { Button, Txt } from '../components/Button';
 import { Input } from '../components//Input';
@@ -10,7 +9,7 @@ class Registration extends Component{
     render()
     {
         return (
-            <Panel>
+            <Panel regwindow>
                 <Wrapper>
                     <Button>
                         <Txt>
@@ -19,19 +18,21 @@ class Registration extends Component{
                     </Button>
                     <Button>
                         <Txt>
-                        Sign In
+                            Sign In
                         </Txt>
                     </Button>
                 </Wrapper>
-                <Input placeholder="Email adress"/>
-                <Input last placeholder="Password"/>
-                <Button transparent>
+                <Input first placeholder="Login"/>
+                <Input placeholder="Name"/>
+                <Input placeholder="Password"/>
+                <Input placeholder="Repeat Password"/>
+                <Input placeholder="Email"/>
+                <Button create>
                     <Txt>
-                        Sign In
+                        Create Account
                     </Txt>
                 </Button>
             </Panel>
-
         );
     }
 }

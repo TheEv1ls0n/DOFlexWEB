@@ -1,26 +1,22 @@
 import styled, { css }from 'styled-components';
 
-export const Input = styled.input`
+export  const Input = styled.input`
   display: inline-block;
+  flex: 0 1 60px;
   vertical-align: center;
   text-decoration: none;
-  width: 167px;
-  height: 16px;
+  width: 455px;
   border-radius: 10px;
   border: 1px solid #000000;
-  padding-top: 28px;
-  padding-right: 144px;
-  padding-bottom: 28px;
-  padding-left: 144px;
-  margin-top: 90px; 
-  font-size: 30px;
+  margin-top: 54px; 
+  font-size: 28px;
   transition: 0.1s;
   cursor: pointer;
   user-select: none;
    ${props => css`
   
-    ${props.last && css`
-        margin-top: 54px;
+    ${props.first && css`
+        margin-top: 90px;
     `}
   `}
 `;

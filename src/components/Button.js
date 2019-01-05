@@ -18,7 +18,7 @@ export const Button = styled.button`
   
   ${props => css`
   
-    ${props.transparent && css`
+    ${props.sign && css`
         border-radius: 10px;
         background-color: #555555;
         color: white;
@@ -29,12 +29,23 @@ export const Button = styled.button`
             border-color: purple;
         }
     `}
+        
+    ${props.create && css`
+        border-radius: 10px;
+        background-color: #555555;
+        color: white;
+        margin-top: 80px;
+        width: 300px;
+        flex: 0 1 80px; /*changes height of button*/
+        &:hover {
+            border-color: purple;
+        }
+    `}
   `}
 `;
 
 export const Txt = styled.a`
     text-transform: uppercase;
-    font-family: "Nanum-Gothic-Coding, Mono-serif";
     font-size: 24px;
     font-weight: 400;
 `
