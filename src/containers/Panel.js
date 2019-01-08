@@ -1,25 +1,55 @@
-import styled, { css }from 'styled-components';
+import React from "react";
+import { Button, Txt } from '../components/Button';
+import { Input } from '../components//Input';
+import { Wrapper } from "../containers/Wrapper";
 
+function Panel(props) {
+  return(
+    <div class = "panel">
+      <Wrapper>
+        <Button>
+          <Txt>
+            Create Account
+          </Txt>
+        </Button>
+        <Button>
+          <Txt>
+            Sign In
+          </Txt>
+        </Button>
+      </Wrapper>
+      <RegForm />
+    </div>
+  )
+}
 
-export const Panel = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 115px auto auto auto;
-  width: 1020px;
-  height: 680px;
-  box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.21), inset 0 2px 7px 1px rgba(0, 0, 0, 0.06);
-  background-color: #ffffff;
-  
-  
-  ${props => css`
-   
-     ${props.regwindow && css`
-         
-         height: 120vh;
-         &:hover {
-             border-color: purple;
-         }
-  `}
-  `}
-  `
+function RegForm(props) {
+  return(
+    <div class ="registration">
+      <Input first placeholder="Login"/>
+      <Input placeholder="Name"/>
+      <Input placeholder="Password"/>
+      <Input placeholder="Repeat Password"/>
+      <Input placeholder="Email"/>
+      <Button create>
+        <Txt>
+          Create Account
+        </Txt>
+      </Button>
+      </div>
+  )
+}
+function  LogForm() {
+  return(
+    <div >
+        <Input first placeholder="Email adress"/>
+        <Input placeholder="Password"/>
+        <Button sign>
+          <Txt>
+            Sign In
+          </Txt>
+        </Button>
+      </div>
+  )
+}
+export default Panel;

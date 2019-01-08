@@ -10,6 +10,19 @@ const globalStyles = css`
         text-align: center;
     }
     
+    .panel{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto auto auto;
+      width: 1020px;
+      height: 100vh;
+      box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.21), inset 0 2px 7px 1px rgba(0, 0, 0, 0.06);
+      background-color: #ffffff;
+  }
+  .registration {
+      all: inherit;
+  }
 `;
 
 

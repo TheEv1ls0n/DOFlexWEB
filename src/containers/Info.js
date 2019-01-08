@@ -2,7 +2,7 @@ import styled, { css }from 'styled-components';
 import React, { Component } from 'react';
 import { Avatar } from '../components/Avatar'
 import { Txt} from "../components/Button";
-import { Panel } from "./Panel";
+import  Panel from "./Panel";
 
 class Info extends Component{
   render(){
